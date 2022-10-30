@@ -6,12 +6,10 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 16:11:31 by mrami             #+#    #+#             */
-/*   Updated: 2022/10/28 14:32:16 by mrami            ###   ########.fr       */
+/*   Updated: 2022/10/30 12:35:32 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include<string.h>
-// #include<stdio.h>
 #include"libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

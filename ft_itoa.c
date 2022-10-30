@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 18:32:29 by mrami             #+#    #+#             */
-/*   Updated: 2022/10/29 18:20:20 by mrami            ###   ########.fr       */
+/*   Updated: 2022/10/29 19:28:36 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_cont_num(int num)
 	count = 0;
 	if (num == 0)
 	{
-		return (0);
+		return (1);
 	}
 	if (num < 0)
 	{
@@ -41,7 +41,7 @@ char	*ft_itoa(int n)
 
 	tmp = n;
 	len = ft_cont_num(n);
-	dst = (char *)malloc((len + 1) * sizeof(char));
+	dst = malloc((len + 1));
 	if (!dst)
 		return (NULL);
 	dst[len] = '\0';
@@ -57,10 +57,4 @@ char	*ft_itoa(int n)
 		len--;
 	}
 	return (dst);
-}
-
-int main ()
-{
-	long int n = 21474836427;
-	printf("%s", ft_itoa(n));
 }

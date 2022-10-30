@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 14:34:03 by mrami             #+#    #+#             */
-/*   Updated: 2022/10/28 20:09:17 by mrami            ###   ########.fr       */
+/*   Updated: 2022/10/30 12:33:10 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int len;
+	int	len;
 
 	len = ft_strlen(s);
 	while (len >= 0)

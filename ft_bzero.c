@@ -6,13 +6,11 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 22:55:00 by mrami             #+#    #+#             */
-/*   Updated: 2022/10/28 14:30:36 by mrami            ###   ########.fr       */
+/*   Updated: 2022/10/30 12:34:28 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-#include<stdio.h>
-#include<string.h>
 
 void	ft_bzero(void *s, size_t n)
 {

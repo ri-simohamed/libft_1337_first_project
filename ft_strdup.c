@@ -6,14 +6,11 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 04:56:41 by mrami             #+#    #+#             */
-/*   Updated: 2022/10/28 16:56:27 by mrami            ###   ########.fr       */
+/*   Updated: 2022/10/30 12:36:04 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-#include<string.h>
-#include<stdio.h>
-#include<stdlib.h>
 
 char	*ft_strdup(const char *s1)
 {
