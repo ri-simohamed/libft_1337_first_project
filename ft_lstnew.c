@@ -1,35 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 17:41:09 by mrami             #+#    #+#             */
-/*   Updated: 2022/10/31 17:46:22 by mrami            ###   ########.fr       */
+/*   Created: 2022/10/30 14:45:40 by mrami             #+#    #+#             */
+/*   Updated: 2022/10/31 23:27:30 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t n)
+t_list	*ft_lstnew(void *content)
 {
-	char	*dest;
-	char	*str;
+	t_list	*p;
 
-	dest = (char *)dst;
-	str = (char *)src;
-	if (dest <= str)
-	{
-		return (ft_memcpy(dst, src, n));
-	}
-	else if (dest > str)
-	{
-		while (n > 0)
-		{
-			dest[n - 1] = str[n - 1];
-			n--;
-		}
-	}
-	return (dst);
+	p = malloc (sizeof * content);
+	if (!p)
+		return (NULL);
+	p->content = content;
+	p->next = NULL;
+	return (p);
 }
+
+// int main ()
+// {
+// 	char 	ptr[] = "rami";
+// 	t_list *x;
+// 	x = ft_lstnew(ptr);
+// 	printf("%s", x->content);
+// }

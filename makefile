@@ -34,9 +34,12 @@ Cfiles = ft_calloc.c \
         ft_putendl_fd.c \
         ft_putnbr_fd.c \
         ft_strtrim.c \
-        ft_striteri.c
+        ft_striteri.c \
+
+BONUSFile =  ft_lstnew.c
 
 objs = $(Cfiles:.c=.o)
+BONUS_OBJS = $(BONUSFile:.c=.o)
 
 all : $(NAME)
 
@@ -45,10 +48,10 @@ $(NAME): $(objs)
 
 %.o: %.c libft.h
 	@$(cc) $(Cflages) -c $<  -o $@
-bonus:
-	echo ""
+bonus: $(objs) $(BONUS_OBJS)
+	@ar rc $(NAME) $(objs) $(BONUS_OBJS)
 clean :
-	@rm -rf $(objs)
+	@rm -rf $(objs) $(BONUS_OBJS)
 
 fclean :	clean
 	@rm -rf	$(NAME)
