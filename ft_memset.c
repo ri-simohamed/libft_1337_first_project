@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 21:32:25 by mrami             #+#    #+#             */
-/*   Updated: 2022/11/02 01:34:10 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/02 02:28:37 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,13 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	char	*str;
 	size_t	i;
 
-	str = (char *)b;
 	i = 0;
 	while (i < len)
 	{
-		str[i] = (char)c;
+		((unsigned char *)b)[i] = c;
+		// *(unsigned char *)(b + i) = c;
 		i++;
 	}
 	return (b);

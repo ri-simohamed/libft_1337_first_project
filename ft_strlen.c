@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 17:28:41 by mrami             #+#    #+#             */
-/*   Updated: 2022/10/30 12:36:25 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/02 01:55:12 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,12 @@ size_t	ft_strlen(const char *s)
 
 	len = 0;
 	while (s[len] != '\0')
-	{
 		len++;
-	}
 	return (len);
 }
+
+// int main ()
+// {
+// 	//char *str;
+// 	printf("%zu", ft_strlen(NULL));
+// }

@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 16:21:26 by mrami             #+#    #+#             */
-/*   Updated: 2022/10/29 18:04:06 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/02 02:58:53 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ static int	ft_checkset(char str, char *set)
 	while (set[i])
 	{
 		if (str == set[i])
-		{
 			return (1);
-		}
 		i++;
 	}
 	return (0);

@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 04:41:04 by mrami             #+#    #+#             */
-/*   Updated: 2022/10/27 04:04:40 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/02 02:55:49 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*location;
 
 	if (!s2)
-	{
 		return ((char *)s1);
-	}
 	len_s1 = (ft_strlen(s1) + 1);
 	len_s2 = (ft_strlen(s2) + 1);
 	location = malloc ((len_s1 + len_s2) + 1);
 	if (!location)
-	{
 		return (0);
-	}
 	else
 	{
 		ft_strlcpy(location, s1, len_s1);
