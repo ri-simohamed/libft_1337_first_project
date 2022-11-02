@@ -6,9 +6,11 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 23:13:41 by mrami             #+#    #+#             */
-/*   Updated: 2022/11/01 23:13:44 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/02 16:56:01 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include"libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

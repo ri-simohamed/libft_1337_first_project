@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 13:19:43 by mrami             #+#    #+#             */
-/*   Updated: 2022/11/01 22:12:23 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/02 15:32:17 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include<stdio.h>
 # include<stdlib.h>
 # include<string.h>
+# include <fcntl.h>
 
 typedef struct s_list
 {

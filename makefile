@@ -1,5 +1,5 @@
 NAME = libft.a
-cc = gcc
+cc = cc
 Cflages = -Wall -Wextra -Werror
 Cfiles = ft_calloc.c \
         ft_isdigit.c \
@@ -36,7 +36,11 @@ Cfiles = ft_calloc.c \
         ft_strtrim.c \
         ft_striteri.c \
 
-BONUSFile =  ft_lstnew.c
+BONUSFile =  ft_lstnew.c \
+			ft_lstadd_front.c \
+			ft_lstadd_back.c \
+			ft_lstlast.c \
+			ft_lstsize.c \
 
 objs = $(Cfiles:.c=.o)
 BONUS_OBJS = $(BONUSFile:.c=.o)
@@ -47,13 +51,13 @@ $(NAME): $(objs)
 	@ar rc $(NAME) $(objs)
 
 %.o: %.c libft.h
-	@$(cc) $(Cflages) -c $<  -o $@
+	@$(cc) $(Cflages) -c $<
 bonus: $(objs) $(BONUS_OBJS)
 	@ar rc $(NAME) $(objs) $(BONUS_OBJS)
 clean :
 	@rm -rf $(objs) $(BONUS_OBJS)
 
-fclean :	clean
+fclean : clean
 	@rm -rf	$(NAME)
 re: fclean all
 .PHONY: all fclean clean re bonus
