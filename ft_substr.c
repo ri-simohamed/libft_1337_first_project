@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 22:43:53 by mrami             #+#    #+#             */
-/*   Updated: 2022/11/02 02:59:43 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/05 14:15:10 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		len = ft_strlen(s + start);
 	if (start >= ft_strlen(s))
 		return (ft_strdup("\0"));
-	dst = malloc(len + 1);
+	dst = malloc((len + 1));
 	if (!dst)
 		return (NULL);
 	i = 0;

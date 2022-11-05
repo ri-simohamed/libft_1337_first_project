@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 21:22:35 by mrami             #+#    #+#             */
-/*   Updated: 2022/11/02 17:27:16 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/04 12:26:12 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@ int	ft_atoi(const char *str)
 	i = 0;
 	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t'
 		|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
-	{
 		i++;
-	}
 	sign = 1;
 	if (str[i] == '+' || str[i] == '-')
 	{
@@ -39,4 +37,3 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * num);
 }
-
