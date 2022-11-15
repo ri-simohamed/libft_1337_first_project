@@ -1,6 +1,6 @@
 NAME = libft.a
 cc = cc
-Cflages = -Wall -Wextra -Werror
+# Cflages = -Wall -Wextra -Werror
 Cfiles = ft_calloc.c \
 		ft_isdigit.c \
 		ft_memcmp.c \
@@ -45,7 +45,7 @@ $(NAME): $(Ofile)
 	@ar rc $(NAME) $(Ofile)
 
 %.o: %.c libft.h
-	@$(cc) $(Cflages) -c $<
+	@$(cc)  -c $<
 
 clean :
 	@rm -rf $(Ofile)

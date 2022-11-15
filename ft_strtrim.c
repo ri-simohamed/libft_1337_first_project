@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 16:21:26 by mrami             #+#    #+#             */
-/*   Updated: 2022/11/04 12:45:55 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/11 01:02:32 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*str;
 	char	*start;
 
+	if (!s1 || !set)
+		return (NULL);
 	len = ft_strlen(s1);
 	str = (char *)s1;
 	start = (char *)set;
