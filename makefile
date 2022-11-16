@@ -1,6 +1,6 @@
 NAME = libft.a
 cc = cc
-# Cflages = -Wall -Wextra -Werror
+Cflages = -Wall -Wextra -Werror
 Cfiles = ft_calloc.c \
 		ft_isdigit.c \
 		ft_memcmp.c \
@@ -42,16 +42,16 @@ Ofile = $(Cfiles:.c=.o)
 all : $(NAME)
 
 $(NAME): $(Ofile)
-	@ar rc $(NAME) $(Ofile)
+	ar rc $(NAME) $(Ofile)
 
 %.o: %.c libft.h
-	@$(cc)  -c $<
+	$(cc) $(Cflages) -c $<
 
 clean :
-	@rm -rf $(Ofile)
+	rm -rf $(Ofile)
 
 fclean : clean
-	@rm -rf	$(NAME)
+	rm -rf	$(NAME)
 
 re: fclean all
 .PHONY: all fclean clean re

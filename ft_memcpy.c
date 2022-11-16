@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 16:37:44 by mrami             #+#    #+#             */
-/*   Updated: 2022/11/09 02:23:16 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/16 21:28:46 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char	*str1;
-	char	*str2;
-	size_t	i;
+	const char	*str1;
+	char		*str2;
+	size_t		i;
 
-	str1 = (char *)src;
-	str2 = (char *)dst;
+	str1 = src;
+	str2 = dst;
 	i = 0;
 	if (str1 == str2)
 		return (dst);

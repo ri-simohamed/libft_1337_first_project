@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 17:41:09 by mrami             #+#    #+#             */
-/*   Updated: 2022/11/03 16:16:22 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/16 21:35:54 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,13 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	char	*dest;
-	char	*str;
+	const char	*str;
+	char		*dest;
 
-	dest = (char *)dst;
-	str = (char *)src;
+	dest = dst;
+	str = src;
 	if (dest <= str)
-	{
-		return (ft_memcpy(dst, src, n));
-	}
+		ft_memcpy(dest, src, n);
 	else if (dest > str)
 	{
 		while (n > 0)

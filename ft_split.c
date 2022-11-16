@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 04:54:16 by mrami             #+#    #+#             */
-/*   Updated: 2022/11/12 22:54:54 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/16 10:45:52 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,14 @@ static int	ft_words(const char *s, char c)
 	return (word);
 }
 
-char	**ft_free(char **dst, int i)
+char	**ft_free(char **dst, int len)
 {
 	int	j;
 
-	i = 0;
 	j = 0;
-	while (i > j)
+	while (j < len)
 	{
-		free(dst[i]);
+		free(dst[j]);
 		j++;
 	}
 	free(dst);

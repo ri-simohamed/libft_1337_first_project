@@ -6,7 +6,7 @@
 /*   By: mrami <mrami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 13:19:43 by mrami             #+#    #+#             */
-/*   Updated: 2022/11/15 19:27:34 by mrami            ###   ########.fr       */
+/*   Updated: 2022/11/16 10:51:54 by mrami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # include <unistd.h>
 # include<stdlib.h>
 # include <fcntl.h>
-# include <limits.h>
 
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char	*src, size_t dstsize);
